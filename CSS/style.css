@@ -1,0 +1,949 @@
+*{  
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;    
+}
+
+/* Imagen de fondo principal*/
+.Fprincipal{
+    background-image: url(../Img/fondo1.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+/*Imagen de fondo Quien soy*/
+#Fyo{
+    background-image: url(../Img/ordenador.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    
+}
+/*Imagen de fondo programación*/
+.FProgramacion{
+    background-image: url(../Img/fondoP.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.FLenguaje{
+    background-image: url(../Img/fondoL.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    width: 100%;   
+}
+
+.nav{
+    /*Quitar los puntos a la lista desordenada*/
+    list-style: none;
+    margin: auto;
+    display: inline-block;
+    
+}
+
+.nav li a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 30px;
+
+      
+}
+/*Cuando pasemos por encima el ratón en nuestro menu*/
+.nav li a:hover{
+    color: yellow;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    
+}
+/*Para que se visualice el submenu cuando pase el raton por encima de proyectos*/
+.nav li:hover > ul{
+    display: block;
+    list-style: none;   
+}
+.nombre{
+    display: block;
+    padding: 0px 30px;
+    text-align: left;
+    color: yellow;
+    font-size: 30px;
+    /*Para poner todas las letras en mayuscula*/
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.contenido{
+    height: 80vh;
+    align-items: center;
+    text-align:center;
+    color:yellow;
+    width: 100%;
+    padding: 200px 20px;  
+}
+
+/*Con esto le he dicho que cuando la anchura de mi pagina sea menor a 900px el nombre que tengo arriba a la izquierda me desaparezca*/
+@media (max-width:900px){
+    .nombre{
+        display: none;
+    }
+}
+.contenido h1{
+    font-size: 120px;
+    text-align: center;
+    display: block;
+     /* Con estas dos etiquetas se le puede dar contorno a las letras, con la primera etiqueta se le da grosor al contorno en este caso le hemos dado 3px y con la segunda etiqueta
+    se le da color al contorno que rodeadará nuestro texto.*/
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.contenido p{
+    font-size: 60px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.redes {
+    text-align: right;
+    font-size: 50px;
+    padding: 0px 10px;
+    list-style: none; 
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.redes li a{
+    color: yellow;
+}
+
+
+/*Texto apartado Quién soy*/
+.yo{
+    color: white;
+    font-size: 35px;
+    /*separación entre lineas*/
+    line-height: 60px;
+    text-align: left;
+    width: 80%;
+    height: 100vh;
+    padding: 100px 100px;
+    justify-content: center;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    
+}
+/*A la foto le he puesto una posicion absoluta para poder moverla y situarla donde yo quiero*/
+.foto{
+    height: 300px;
+    width: 300px;
+    right: 100px;
+    top: 110vh;
+    border-radius: 50px;
+    border: 10px outset purple;
+    position: absolute;   
+}
+
+/*Curriculum vitae*/
+
+.cv{
+    background-image: url(../Img/ordenador.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    
+    opacity: 0.9;
+    justify-content: center;
+    text-align: center;
+    
+}
+.cv h1{
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    margin: auto;
+    border: solid rgb(255, 255, 255) 5px;
+    margin-bottom: 50px;
+    background-color: #6217CB;
+    padding: 15px 15px;
+
+}
+.cvl{
+    font-size: 30px;
+    padding: 60px 0px;
+    margin: auto;
+    color: white;
+    border: outset #6217CB 10px;
+    border-radius: 50px;
+    width: 70%; 
+    
+    background-color: #CAB1ED;
+    display: block
+    
+    
+}
+.cvl ul{
+    list-style: none;
+        
+}
+.espacio{
+    width: 80%;
+    height: 5px;
+    background-color: blueviolet;
+    margin: 100px;
+    border-radius: 100px;
+}
+/*Logos y texto de las skills*/
+#skill{
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    
+
+}
+#skill img{
+   width: 100px;
+   height: 100px;
+   display: inline;
+}
+
+#skill figcaption{
+    display: inline;
+}
+
+#skill1{
+    color: white;
+    display: inline;
+    font-size: 50px;
+    margin: 50px 0px;
+    
+   
+    
+
+}
+#skill1 img{
+   width: 80px;
+   height: 80px;
+   display: inline-block; 
+   
+}
+
+#skill1 figcaption{
+    display: inline;
+   
+
+    
+}
+/*Contacto*/
+
+#contacto{
+    width: 100%;
+    
+   
+    
+    
+}
+/*Aqui le doy tamaño a las cajas del formulario*/
+#form input {
+    text-align: left;
+    font-size: 30px;
+}
+/*Aqui le doy tamaño al texto que va antes que el formulario*/
+#form{
+    font-size: 30px;
+    align-items: left;
+    color: white;
+    text-align: left;
+    padding: 0px 100px;
+    
+}
+
+
+.comando{
+    padding-bottom: 50px;
+}
+.comando input{
+    display: inline;
+    font-size: 30px;
+    width: 40%;
+    background-color: #6217CB;
+    
+}
+.action{
+    margin: auto;
+    padding: 0px 400px;
+    padding-bottom: 50px;
+}
+
+
+/*Proyectos*/
+
+h3{
+    text-align: center;
+    padding-top: 150px;
+    color: azure;
+    font-size: 70px;
+   
+}
+
+div img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/*Imagen1*/
+/*Le doy a cada imagen con su resectiva clase .uno, .dos, .tres ... una posicion absoluta para poder moverlas donde quiero en mi página web con un left y un top*/
+.uno{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    border: solid black;
+    
+}
+
+/*le digo que cuando pase el raton por encima la imagen salga a 900px y mas abajo le digo el nuevo tamaño que tendra la imagen que sera mas grande para que se pueda visualizar mejor */
+
+
+.uno:hover{
+    z-index: 10;
+    left: 900px;
+    top: 10vh;
+}
+.uno img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen2*/
+.dos{
+    position: absolute;
+    left: 280px;
+    top: 300px;
+    border: solid black;
+}
+.dos:hover{
+    z-index: 10;
+    left: 900px;
+    top: 10vh;
+}
+.dos img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen3*/
+.tres{
+    position: absolute;
+    left: 360px;
+    top: 300px;
+    border: solid black;
+}
+.tres:hover{
+    z-index: 100;
+    left: 900px;
+    top: 10vh;
+}
+.tres img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen4*/
+.cuatro{
+    position: absolute;
+    left: 440px;
+    top: 300px;
+    border: solid black;
+}
+.cuatro:hover{
+    z-index: 100;
+    left: 900px;
+    top: 10vh;
+}
+.cuatro img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen5*/
+.cinco{
+    position: absolute;
+    left: 520px;
+    top: 300px;
+    border: solid black;
+}
+.cinco:hover{
+    z-index: 100;
+    left: 900px;
+    top: 10vh;
+}
+.cinco img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen6*/
+.seis{
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    border: solid black;
+}
+.seis:hover{
+    z-index: 100;
+    left: 900px;
+    top: 10vh;
+}
+.seis img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*El texto del trabajo */
+.texto{
+
+    width: 500px;
+    position: absolute;
+    left: 200px;
+    top:500px
+}
+
+.texto p{
+    color: azure;
+    font-size:25px
+}
+
+
+/*Para el segundo trabajo*/
+/*Imagen 1b*/
+.unob{
+    position: absolute;
+    left: 200px;
+    top: 600px;
+    border: solid black;
+}
+.unob:hover{
+    z-index: 100;
+    left: 900px;
+    top: 10vh;
+}
+.unob img:hover{
+    height: 80vh;
+    width: 800px;
+}
+
+/*Imagen2b*/
+
+.dosb{
+    position: absolute;
+    left: 280px;
+    top: 600px;
+    border: solid black;
+}
+.dosb:hover{
+    z-index: 100;
+    left: 900px;
+    top: 10vh;
+}
+.dosb img:hover{
+    height: 80vh;
+    width: 800px;
+}
+
+/*Imagen 3b*/
+
+.tresb{
+    position: absolute;
+    left: 360px;
+    top: 600px;
+    border: solid black;
+}
+.tresb:hover{
+    z-index: 100;
+    left: 900px;
+    top: 10vh;
+}
+.tresb img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Segundo texto de trabajo*/
+.texto2{
+
+    width: 500px;
+    position: absolute;
+    left: 200px;
+    top:800px
+}
+
+.texto2 p{
+    color: azure;
+    font-size:25px
+}
+
+/*Responsive a 992px*/
+
+@media screen and (max-width: 992px){
+
+   /*Menu*/
+    .nav li a {
+        font-size: 25px;
+    }
+    .nombre{
+        padding: 50px 30px;
+    }
+
+    /*Titulo de la pagina principal*/
+    .contenido{
+       width: 100%;
+    }
+
+    .contenido h1{
+        font-size: 100px;
+        
+    }
+    .contenido p{
+        font-size: 40px;
+    }
+    /*Quien soy*/
+
+    .yo{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .foto{
+        height: 200px;
+        width: 200px;
+        right: 40px;
+    }
+    /*Experiencia laboral*/
+    .cvl li {
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+
+    /*Proyectos*/
+    .uno{
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    border: solid black; 
+}
+    .uno:hover{
+    z-index: 10;
+    left: 100px;
+}
+.uno img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen2*/
+.dos{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    border: solid black;
+}
+.dos:hover{
+    z-index: 10;
+    left: 100px;
+}
+.dos img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen3*/
+.tres{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    border: solid black;
+}
+.tres:hover{
+    z-index: 100;
+    left: 100px;
+}
+.tres img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen4*/
+.cuatro{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    border: solid black;
+}
+.cuatro:hover{
+    z-index: 100;
+    left: 100px;
+}
+.cuatro img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen5*/
+.cinco{
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    border: solid black;
+}
+.cinco:hover{
+    z-index: 100;
+    left: 100px;
+}
+.cinco img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Imagen6*/
+.seis{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    border: solid black;
+}
+.seis:hover{
+    z-index: 100;
+    left: 100px;
+}
+.seis img:hover{
+    height: 80vh;
+    width: 800px;
+}
+
+/*Segundo trabajo del proyecto*/
+
+.unob{
+    position: absolute;
+    left: 50px;
+    top: 600px;
+    border: solid black;
+}
+.unob:hover{
+    z-index: 100;
+    left: 100px;
+}
+.unob img:hover{
+    height: 80vh;
+    width: 800px;
+}
+
+/*Imagen2b*/
+
+.dosb{
+    position: absolute;
+    left: 100px;
+    top: 600px;
+    border: solid black;
+}
+.dosb:hover{
+    z-index: 100;
+    left: 100px;
+}
+.dosb img:hover{
+    height: 80vh;
+    width: 800px;
+}
+
+/*Imagen 3b*/
+
+.tresb{
+    position: absolute;
+    left: 150px;
+    top: 600px;
+    border: solid black;
+}
+.tresb:hover{
+    z-index: 100;
+    left: 100px;
+}
+.tresb img:hover{
+    height: 80vh;
+    width: 800px;
+}
+/*Textos*/
+
+.texto{
+    left: 30px;
+}
+.texto2{
+    left: 30px;
+}
+  
+}
+/*Responsive 576px*/
+
+@media screen and (max-width:576px){
+     /*Menu*/
+     .nav li a {
+        font-size: 20px;
+    }
+
+    /*Titulo de la pagina principal*/
+    .contenido{
+       width: 100%;
+    }
+
+    .contenido h1{
+        font-size: 70px;
+        
+    }
+    .contenido p{
+        font-size: 30px;
+    }
+    /*Quien soy*/
+
+    .yo{
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .foto{
+        height: 150px;
+        width: 150px;
+        right: 40px;
+    }
+    /*Experiencia laboral*/
+    .espacio{
+        margin: 50px;
+    }
+    .cvl li {
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+
+    /*Skills*/
+
+    #skill{
+        font-size: 20px;
+    }
+    #skill img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #skill1{
+        font-size: 20px;
+    }
+    #skill1 img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #form{
+        font-size: 20px;
+    }
+    #form input{
+        font-size: 20px;
+    }
+    .comando input{
+        font-size: 20px;
+    }
+    /*Le he metido una posicion absoluta a file para poder colocarlo */
+    .file{
+
+        width: 100%;
+    }
+    .file input{
+        position: absolute;
+        left: -370px;
+       
+       
+    }
+
+    /*Proyectos*/
+    .uno{
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    border: solid black; 
+}
+    .uno:hover{
+    z-index: 10;
+    left: 20px;
+}
+.uno img:hover{
+    height: 80vh;
+    width: 500px;
+}
+/*Imagen2*/
+.dos{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    border: solid black;
+}
+.dos:hover{
+    z-index: 10;
+    left: 20px;
+}
+.dos img:hover{
+    height: 80vh;
+    width: 500px;
+}
+/*Imagen3*/
+.tres{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    border: solid black;
+}
+.tres:hover{
+    z-index: 100;
+    left: 20px;
+}
+.tres img:hover{
+    height: 80vh;
+    width: 500px;
+}
+/*Imagen4*/
+.cuatro{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    border: solid black;
+}
+.cuatro:hover{
+    z-index: 100;
+    left: 20px;
+}
+.cuatro img:hover{
+    height: 80vh;
+    width: 500px;
+}
+/*Imagen5*/
+.cinco{
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    border: solid black;
+}
+.cinco:hover{
+    z-index: 100;
+    left: 20px;
+}
+.cinco img:hover{
+    height: 80vh;
+    width: 500px;
+}
+/*Imagen6*/
+.seis{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    border: solid black;
+}
+.seis:hover{
+    z-index: 100;
+    left: 20px;
+}
+.seis img:hover{
+    height: 80vh;
+    width: 500px;
+}
+
+/*Segundo trabajo del proyecto*/
+
+.unob{
+    position: absolute;
+    left: 50px;
+    top: 600px;
+    border: solid black;
+}
+.unob:hover{
+    z-index: 100;
+    left: 20px;
+}
+.unob img:hover{
+    height: 80vh;
+    width: 500px;
+}
+
+/*Imagen2b*/
+
+.dosb{
+    position: absolute;
+    left: 100px;
+    top: 600px;
+    border: solid black;
+}
+.dosb:hover{
+    z-index: 100;
+    left: 20px;
+}
+.dosb img:hover{
+    height: 80vh;
+    width: 500px;
+}
+
+/*Imagen 3b*/
+
+.tresb{
+    position: absolute;
+    left: 150px;
+    top: 600px;
+    border: solid black;
+}
+.tresb:hover{
+    z-index: 100;
+    left: 20px;
+}
+.tresb img:hover{
+    height: 80vh;
+    width: 500px;
+}
+/*Textos*/
+
+.texto{
+    left: 30px;
+}
+.texto2{
+    left: 30px;
+}
+
+h3{
+    padding-top: 50px;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
