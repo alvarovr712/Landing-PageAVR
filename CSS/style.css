@@ -1,3 +1,4 @@
+/*El url de mi git es: https://github.com/alvarovr712/Landing-PageAVR.git*/
 *{  
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,7 +8,7 @@
 
 /* Imagen de fondo principal*/
 .Fprincipal{
-    background-image: url(../Img/fondo1.jpg);
+    background-image: url(../Img/fondo.jpg);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
